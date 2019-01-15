@@ -50,6 +50,7 @@ Now that we have trained a network and have the weights as C arrays, we can impl
 We now have a functionally correct CNN implemented in C, targeting Vivado HLS. 
 
 1. Now we need to use Vivado HLS to generate RTL from the C implementation. There is a script for doing this: /path/to/spooNN/halfsqueezenet$ ./scripts/make_IP.sh /path/to/spooNN/halfsqueezenet
+【此处开始提示vivado_hls: command not found，开始与硬件相关了】
 2. After the RTL is generated it is packaged in an IP, that is located in /path/to/spooNN/halfsqueezenet/output/hls_project/sol1/impl/ip/xilinx_com_hls_halfsqueezenet_1_0.zip
 3. Create a directory called repo: $ mkdir repo
 4. Copy paste the IP into the new directory: /path/to/spooNN/halfsqueezenet$ cp /path/to/spooNN/halfsqueezenet/output/hls_project/sol1/impl/ip/xilinx_com_hls_halfsqueezenet_1_0.zip ./repo
